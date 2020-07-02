@@ -1,4 +1,10 @@
 <?php
+
+if(!$_POST){
+
+	header('Location:ejercicio1.php');	
+}
+
 $tabla = $_POST ['tabla'];
 $nMaximo = 20;
 $multiplicador = 1;
