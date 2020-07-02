@@ -1,4 +1,11 @@
+<?php
+$num = $_POST("num")
+$res = $_POST("res")
+
+?>
+
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -53,24 +60,38 @@
 					<br></br>
 					
 					<div class="group-material">
-						<label style="color:rgb(252, 250, 249);">Ingresa el numero</label><br></br>
+						<form name = "ejercicio1" method="POST" action="resultado.php">
+						<label style="color:rgb(252, 250, 249);">Resultado</label><br></br>
 						<input type="text" class="material-control tooltips-general"
 							placeholder="Escribe aquí el número" pattern="[0-9]{1,10}"
 							required="" maxlength="2" data-toggle="tooltip" data-placement="top"
-							title="Solamente 2 digitos">
+							title="Solamente 2 digitos" name = "num">
 						<span class="highlight"></span>
 						<span class="bar"></span>
+						
+						<?php
+print "<p>Comienzo</p>\n";
+for ($i = 0; $i < 3; $i++) {
+    print "<p>$i</p>\n";
+}
+print "<p>Final</p>\n";
+?>
+
+
 					</div>
 
 					<br></br>
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" name="ejercicio2">
-							Enviar
+							<a href="../MenuPrincipal/index.html"><i
+									class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp;
+								Volver al menu</a>
 						</button>
 					</div>
-					<br></br>
-					
+
+
+
 				</form>
 			</div>
 		</div>
