@@ -1,13 +1,11 @@
 <?php
-$num = $_POST("num")
-$res = $_POST("res")
-
+$tabla = $_POST ['tabla'];
+$nMaximo = 20;
+$multiplicador = 1;
 ?>
 
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
 	<title>Login V3</title>
 	<meta charset="UTF-8">
@@ -58,28 +56,18 @@ $res = $_POST("res")
 						</h4>
 					</div>
 					<br></br>
-					
-					<div class="group-material">
-						<form name = "ejercicio1" method="POST" action="resultado.php">
-						<label style="color:rgb(252, 250, 249);">Resultado</label><br></br>
-						<input type="text" class="material-control tooltips-general"
-							placeholder="Escribe aquí el número" pattern="[0-9]{1,10}"
-							required="" maxlength="2" data-toggle="tooltip" data-placement="top"
-							title="Solamente 2 digitos" name = "num">
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						
-						<?php
-print "<p>Comienzo</p>\n";
-for ($i = 0; $i < 3; $i++) {
-    print "<p>$i</p>\n";
-}
-print "<p>Final</p>\n";
-?>
+	
+					<h4 align="center" style="color:#FAF7F7">En numero que ingreso es <?= $tabla ?> y su tabla es:</h4>
+					<br></br>
+					<?php
+						while($multiplicador <= $nMaximo)
+						{
+							echo   "<p style=color:#FFFFFF;text-align:center;>{$tabla} * {$multiplicador} = " . $tabla * $multiplicador . "</p>";
+							
+							$multiplicador++;
 
-
-					</div>
-
+						}
+					?>
 					<br></br>
 
 					<div class="container-login100-form-btn">
@@ -89,34 +77,18 @@ print "<p>Final</p>\n";
 								Volver al menu</a>
 						</button>
 					</div>
-
-
-
 				</form>
+
 			</div>
 		</div>
 	</div>
 
 
+
 	<div id="dropDownSelect1"></div>
 
-	<!--===============================================================================================-->
-	<script src="../MenuPrincipal/vendor/jquery/jquery-3.2.1.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="../MenuPrincipal/vendor/animsition/js/animsition.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="../MenuPrincipal/vendor/bootstrap/js/popper.js"></script>
-	<script src="../MenuPrincipal/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="../MenuPrincipal/vendor/select2/select2.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="../MenuPrincipal/vendor/daterangepicker/moment.min.js"></script>
-	<script src="../MenuPrincipal/vendor/daterangepicker/daterangepicker.js"></script>
-	<!--===============================================================================================-->
-	<script src="../MenuPrincipal/vendor/countdowntime/countdowntime.js"></script>
-	<!--===============================================================================================-->
-	<script src="../MenuPrincipal/js/main.js"></script>
 
+	
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Login V3</title>
+	<title>Ejercicio 1</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
@@ -34,7 +34,7 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('../MenuPrincipal/images/bg-01.jpg');">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" action="resultado.php" method="post">
 					<span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape"></i>
 					</span>
@@ -43,30 +43,30 @@
 						Ejercicio 1
 					</span>
 
-
-
 					<div class="container-login100-form-btn">
 						<h4 align="center" style="color:rgb(252, 250, 249);">1. Crear un programa en PHP, que pida el numero de una tabla (numero del 1 al 10);
 							y cuyo resultado sea la impresión de la tabla de multiplicar hasta el 20.
 						</h4>
 					</div>
+					
 					<br></br>
 					
-					<div class="group-material">
-						<form name = "ejercicio1" method="POST" action="resultado.php">
-						<label style="color:rgb(252, 250, 249);">Ingresa el numero</label><br></br>
-						<input type="text" class="material-control tooltips-general"
-							placeholder="Escribe aquí el número" pattern="[0-9]{1,10}"
-							required="" maxlength="2" data-toggle="tooltip" data-placement="top"
-							title="Solamente 2 digitos" name = "num">
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<input type="submit" value="Enviar">
-						</form>
-					</div>
-
+						  <div class="group-material">
+						  <label style="color:#FAF7F7">Ingrese numero a calcular</label>		
+						  <br></br> 
+						  <input type="text" name="tabla" class="material-control tooltips-general"
+                                    pattern="[0-9]{1,10}"
+                                    required="" maxlength="2" data-toggle="tooltip" data-placement="top"
+									title="Solamente 2 digitos">
+									<input type="submit" value="Calcular">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                               
+                            </div>
+					
+					
 					<br></br>
-
+					
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" name="ejercicio2">
 							<a href="../MenuPrincipal/index.html"><i
@@ -74,34 +74,19 @@
 								Volver al menu</a>
 						</button>
 					</div>
-
-
-
 				</form>
+
+				
 			</div>
 		</div>
 	</div>
 
 
+
 	<div id="dropDownSelect1"></div>
 
-	<!--===============================================================================================-->
-	<script src="../MenuPrincipal/vendor/jquery/jquery-3.2.1.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="../MenuPrincipal/vendor/animsition/js/animsition.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="../MenuPrincipal/vendor/bootstrap/js/popper.js"></script>
-	<script src="../MenuPrincipal/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="../MenuPrincipal/vendor/select2/select2.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="../MenuPrincipal/vendor/daterangepicker/moment.min.js"></script>
-	<script src="../MenuPrincipal/vendor/daterangepicker/daterangepicker.js"></script>
-	<!--===============================================================================================-->
-	<script src="../MenuPrincipal/vendor/countdowntime/countdowntime.js"></script>
-	<!--===============================================================================================-->
-	<script src="../MenuPrincipal/js/main.js"></script>
 
+	
 </body>
 
 </html>
