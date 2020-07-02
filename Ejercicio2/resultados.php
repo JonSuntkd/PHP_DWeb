@@ -5,7 +5,6 @@
     switch ($figura) 
     {
         case 'Triángulo':
-            echo"triangulo!!";
             $ladotriangulo = $_GET["ladotriangulo"];
             $base = $_GET["base"];
             $altura = $_GET["altura"];
@@ -14,14 +13,12 @@
         break;
           
         case 'Cuadrado':
-            echo"cuadrado!!";
             $ladocuadrado = $_GET["ladocuadrado"];
             $perimetro = $perimetro + 4*$ladocuadrado;
             $area = pow($ladocuadrado,2);
         break;
 
         case 'Rectángulo':
-            echo"rectángulo!!";
             $largo = $_GET["largo"];
             $ancho = $_GET["ancho"];
             $perimetro = $perimetro + 2*$largo + 2*$ancho;
@@ -29,7 +26,6 @@
         break;
 
         case 'Círculo':
-            echo"circle!!";
             $radio = $_GET["radio"];
             $perimetro = 2*pi()*$radio;
             $area = pi()*pow($radio,2);
