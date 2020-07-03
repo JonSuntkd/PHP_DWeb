@@ -18,7 +18,7 @@
         <h3 class="text-uppercase text-center">EJERCICIO 2</h3>
         <p class="lead">Crear un programa que permita calcular el perímetro y área de un (triangulo, cuadrado, rectángulo, círculo)</p>
         <a class="btn btn-success" data-toggle="collapse" href="#triangulo" role="button" aria-expanded="false" aria-controls="triangulo">Triángulo</a>
-        <form action="resultados.php" method="get" name="formtriangulo" id="triangulo" class="collapse">
+        <form action="resultados.php" method="post" name="formtriangulo" id="triangulo" class="collapse">
             <p><strong>Perímetro de un triángulo</strong></p>
             <div class="form-group row">
                 <label for="ladotriangulo" class="col-3 col-form-label">Ingrese el lado del triángulo: </label>
@@ -42,7 +42,7 @@
     <!--CUADRADO-->
     <section class="container">
         <a class="btn btn-success" data-toggle="collapse" href="#cuadrado" role="button" aria-expanded="false" aria-controls="cuadrado">Cuadrado</a>
-        <form action="resultados.php" method="get" name="formcuadrado" id="cuadrado" class="collapse">
+        <form action="resultados.php" method="post" name="formcuadrado" id="cuadrado" class="collapse">
             <p><strong>Perímetro y área de un cuadrado</strong></p>
             <div class="form-group row">
                 <label for="ladocuadrado" class="col-3 col-form-label">Ingrese el lado del cuadrado: </label>
@@ -57,7 +57,7 @@
     <!--RECTANGULO-->
     <section class="container">
         <a class="btn btn-success" data-toggle="collapse" href="#rectangulo" role="button" aria-expanded="false" aria-controls="rectangulo">Rectángulo</a>
-        <form action="resultados.php" method="get" name="formrectangulo" id="rectangulo" class="collapse">
+        <form action="resultados.php" method="post" name="formrectangulo" id="rectangulo" class="collapse">
             <p><strong>Perímetro y área de un rectangulo</strong></p>
             <div class="form-group row">
                 <label for="largo" class="col-3 col-form-label">Ingrese el largo del rectángulo: </label>
@@ -76,7 +76,7 @@
     <!--CIRCULO-->
     <section class="container">
         <a class="btn btn-success" data-toggle="collapse" href="#circulo" role="button" aria-expanded="false" aria-controls="circulo">Círculo</a>
-        <form action="resultados.php" method="get" name="formcirculo" id="circulo" class="collapse">
+        <form action="resultados.php" method="post" name="formcirculo" id="circulo" class="collapse">
             <p><strong>Perímetro y área de un círculo</strong></p>
             <div class="form-group row">
                 <label for="radio" class="col-3 col-form-label">Ingrese el radio de un círculo: </label>

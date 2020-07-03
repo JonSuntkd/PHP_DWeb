@@ -1,32 +1,32 @@
 <?php
-    $figura = $_GET["figura"];
+    $figura = $_POST["figura"];
     $perimetro = 0;
     $area = 1;
     switch ($figura) 
     {
         case 'Triángulo':
-            $ladotriangulo = $_GET["ladotriangulo"];
-            $base = $_GET["base"];
-            $altura = $_GET["altura"];
+            $ladotriangulo = $_POST["ladotriangulo"];
+            $base = $_POST["base"];
+            $altura = $_POST["altura"];
             $perimetro = $perimetro + 3*$ladotriangulo;
             $area = ($base*$altura)/2;
         break;
           
         case 'Cuadrado':
-            $ladocuadrado = $_GET["ladocuadrado"];
+            $ladocuadrado = $_POST["ladocuadrado"];
             $perimetro = $perimetro + 4*$ladocuadrado;
             $area = pow($ladocuadrado,2);
         break;
 
         case 'Rectángulo':
-            $largo = $_GET["largo"];
-            $ancho = $_GET["ancho"];
+            $largo = $_POST["largo"];
+            $ancho = $_POST["ancho"];
             $perimetro = $perimetro + 2*$largo + 2*$ancho;
             $area = $largo * $ancho;
         break;
 
         case 'Círculo':
-            $radio = $_GET["radio"];
+            $radio = $_POST["radio"];
             $perimetro = 2*pi()*$radio;
             $area = pi()*pow($radio,2);
         break;
